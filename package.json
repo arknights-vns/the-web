@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "classnames": "^2.5.1",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sass": "^1.87.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
