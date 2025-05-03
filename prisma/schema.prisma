@@ -1,0 +1,37 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator gyatt {
+  provider = "prisma-client-js"
+  output   = "../lib/prisma/client"
+}
+
+model MemberVote {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  count Int    @default(0)
+}
+
+// Operator table from three6ty1/arknights-wordle
+model Operator {
+  name       String  @unique
+  gender     String
+  race       String
+  group      String?
+  nation     String
+  profession String
+  archetype  String
+  position   String
+  infected   String
+  rarity     Int
+  costE0     Int
+  costE2     Int
+  id         Int     @id @map("_id")
+  charId     String  @default("x")
+}
+
+model BannedOperators {
+    id    String @id @default(auto()) @map("_id") @db.ObjectId
+    count Int    @default(0)
+}

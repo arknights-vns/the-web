@@ -1,0 +1,23 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "files.exclude": {
+        ".idea": true,
+        ".next": true,
+        "package-lock.json": true,
+        "lib/prisma": true,
+        "node_modules": true,
+        "**/shikanoko.txt": true // shhhh
+    },
+    "eslint.format.enable": true
+}

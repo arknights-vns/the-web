@@ -14,7 +14,18 @@ const eslintConfig = [
     ...compat.extends("next/core-web-vitals", "next/typescript"),
     eslintPluginPrettierRecommended,
     {
+        ignores: ["./lib/prisma/**/**"],
+    },
+    {
         rules: {
+            "react/jsx-curly-brace-presence": [
+                "error",
+                {
+                    props: "always",
+                    children: "never",
+                    propElementValues: "always",
+                },
+            ],
             "prettier/prettier": [
                 "error",
                 {

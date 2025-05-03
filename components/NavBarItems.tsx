@@ -1,25 +1,30 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function NavbarItems() {
-    const path = usePathname();
-
     // https://stackoverflow.com/questions/53262263/target-active-link-when-the-route-is-active-in-next-js
     // https://nextjs.org/docs/app/api-reference/functions/use-router#migrating-from-nextrouter
 
     return (
-        <div className="lg:grid lg:grid-cols-3 lg:place-items-center-safe">
-            <li className={path == "/about/dreamchasers" ? "rounded-sm bg-black text-white" : ""}>
+        <>
+            <li>
                 <Link href={"/about/dreamchasers"}>Chúng tôi là ai?</Link>
             </li>
-            <li className={path == "/about/crew" ? "rounded-sm bg-black text-white" : ""}>
-                <Link href={"/about/crew"}>Nhân sự</Link>
+            <li>
+                <details open={false}>
+                    <summary>Nhân sự</summary>
+                    <ul>
+                        <li>
+                            <Link href={"/about/crew"}>&#34;Dreamchasers&#34;</Link>
+                        </li>
+                        <li>
+                            <Link href={"/about/partners"}>Đối tác</Link>
+                        </li>
+                    </ul>
+                </details>
             </li>
-            <li className={path == "/timeline" ? "rounded-sm bg-black text-white" : ""}>
+            <li>
                 <Link href={"/timeline"}>Kế hoạch</Link>
             </li>
-        </div>
+        </>
     );
 }

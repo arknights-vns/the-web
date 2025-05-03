@@ -1,12 +1,19 @@
 import Calendar from "@/components/svg/Calendar";
 import LocationPin from "@/components/svg/LocationPin";
-import VNS_Banner from "@/public/VNS_Banner.png";
 import Image from "next/image";
 
 export default function Home() {
     return (
         <div className={"flex flex-col items-center space-y-8"}>
-            <Image className={"px-10"} src={VNS_Banner} alt={"VNS-banner"} width={650} />
+            <Image
+                className={"px-10"}
+                src={"/VNS_Banner.png"}
+                alt={"VNS-banner"}
+                loading={"eager"}
+                priority
+                width={900}
+                height={400}
+            />
             <div className={"flex flex-col space-y-5 text-sm font-extrabold lg:text-xl"}>
                 <div className={"flex items-center"}>
                     <div className={"px-2"}>

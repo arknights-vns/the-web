@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { ReactNode } from "react";
 
-import "./globals.css";
+import "../globals.css";
 
 const jbMono = JetBrains_Mono({
     variable: "--font-jb-mono",
@@ -11,7 +11,7 @@ const jbMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://arknights-vietnam-station.github.io/"),
+    metadataBase: new URL("https://vns.giabao06.xyz/VNS_Banner.png"),
     title: "Dreamchasers @ 2025 🔥",
     description: "From VNS Dev Squad with love ❤️️",
     authors: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: [
             {
-                url: "https://arknights-vietnam-station.github.io/VNS_Banner.png",
+                url: "https://vns.giabao06.xyz/VNS_Banner.png",
                 alt: "VNS banner",
             },
         ],
@@ -43,7 +43,7 @@ export default function RootLayout({
     children: ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang={"en"} data-theme={"light"}>
             <body className={`${jbMono.variable} antialiased`}>
                 <NavBar />
                 <div

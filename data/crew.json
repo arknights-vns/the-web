@@ -46,24 +46,9 @@
       "quote": "Pay us Wiz"
     },
     {
-      "name": "Tkieen",
-      "role": "Multimedia",
-      "quote": "Cợt nhả có lông"
-    },
-    {
       "name": "Red",
       "role": "Kahoot",
       "quote": "Yeah, Science! - Jesse Pinkman"
-    },
-    {
-      "name": "TuanAnh",
-      "role": "Kahoot",
-      "quote": "Limbussy"
-    },
-    {
-      "name": "Erich C. H.",
-      "role": "Wordle",
-      "quote": "「走ってこの世界から逃亡したい」"
     },
     {
       "name": "SADUS",
@@ -71,23 +56,45 @@
       "quote": "Why does life slumber?"
     },
     {
+      "name": "TuanAnh",
+      "role": "IT",
+      "quote": "Limbussy"
+    },
+    {
+      "name": "Erich C. H.",
+      "role": "IT",
+      "quote": "Information alone is not enough..."
+    },
+    {
       "name": "シイナ•コチヤ",
-      "role": "Mini_Tournament",
+      "role": "IT",
       "quote": "Someday, our dreams will come true"
     },
     {
       "name": "スイリン•です",
-      "role": "Mini_Tournament",
+      "role": "IT",
       "quote": "I play Balatro 48 hours a day."
+    }
+  ],
+  "partners": [
+    {
+      "name": "Tkieen",
+      "role": "Graphic_Designer",
+      "quote": "Cợt nhả có lông"
+    },
+    {
+      "name": "Monoka",
+      "role": "Illusion_Artist",
+      "quote": ""
     },
     {
       "name": "Rei",
-      "role": "Artist",
+      "role": "Sponsor",
       "quote": "Keep Moving Forward"
     },
     {
       "name": "bibom10",
-      "role": "Artist",
+      "role": "Sponsor",
       "quote": "For the Doctors, by the Doctors!"
     },
     {
@@ -101,14 +108,44 @@
       "quote": "NOT EXIST"
     },
     {
+      "name": "Zopu",
+      "role": "Graphic_Designer",
+      "quote": ""
+    },
+    {
+      "name": "Hoaq",
+      "role": "[VCL]",
+      "quote": ""
+    },
+    {
+      "name": "Orei",
+      "role": "[VCL]",
+      "quote": ""
+    },
+    {
+      "name": "TrungHieuMC",
+      "role": "[VCL]",
+      "quote": ""
+    },
+    {
+      "name": "Phoeni",
+      "role": "[VCL]",
+      "quote": ""
+    },
+    {
       "name": "Cerberose",
-      "role": "Collaborator",
+      "role": "IT",
       "quote": "I don't even play Arknights"
     },
     {
       "name": "Ｈｙｐｅｒ－Ｖ△",
-      "role": "Multimedia",
+      "role": "Photographer",
       "quote": "Làm tí 1 shoot nhom nhom bạn eyyyy"
+    },
+    {
+      "name": "Moorce",
+      "role": "Videographer",
+      "quote": ""
     }
   ]
 }

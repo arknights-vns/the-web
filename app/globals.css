@@ -24,60 +24,70 @@ body {
     border-radius: 1rem;
 }
 
-.Logistics, .Sponsor {
-    color: var(--color-white);
-}
-
-.Event_Director {
-    background-color: var(--color-emerald-300);
-}
-
+/* Crew roles */
+.Event_Director,
+.Co-Director,
 .Consultant\_\&\_MC {
-    background-color: var(--color-violet-400);
+    background-color: var(--color-red-500);
+    color: white;
 }
 
 .Secretary {
-    background-color: var(--color-red-200);
+    background-color: var(--color-red-300);
+    color: var(--color-amber-900)
 }
 
-.Co-Director {
-    background-color: var(--color-red-300);
+.IT {
+    background-color: var(--color-orange-400);
+}
+
+.Logistics {
+    background-color: var(--color-sky-300);
 }
 
 .Kahoot {
     background-color: var(--color-purple-300);
 }
 
-.Logistics {
-    background-color: cornflowerblue;
-}
-
 .Multimedia {
-    background-color: aqua;
+    background-color: var(--color-cyan-400);
 }
 
-.Wordle {
-    background-color: var(--color-gray-300);
+/* Partner roles */
+.\[VCL\] {
+    background-color: var(--color-rose-500);
+    color: var(--color-white);
 }
 
-.Mini_Tournament {
-    background-color: var(--color-amber-300);
-}
-
-.Donator {
-    background-color: var(--color-orange-300);
+.Illusion_Artist {
+    background-color: var(--color-purple-400);
 }
 
 .Sponsor {
-    background-color: var(--color-rose-600);
+    background-color: var(--color-blue-200);
 }
 
-.Artist {
-    background-color: var(--color-lime-300);
+.Donator {
+    background-color: var(--color-emerald-400);
 }
 
-.Collaborator {
-    background-color: var(--color-sky-400);
+.Concept_Artist {
+    background-color: var(--color-blue-200);
+    color: var(--color-blue-600);
+}
+
+.Graphic_Designer {
+    background-color: var(--color-emerald-800);
+    color: var(--color-white);
+}
+
+.Photographer {
+    background-color: var(--color-yellow-200);
+}
+
+.Videographer {
+    background-color: var(--color-red-400);
+    color: var(--color-white);
 }
 
 @utility bg-vns-noise {
