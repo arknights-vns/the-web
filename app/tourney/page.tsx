@@ -5,6 +5,8 @@ import VNS_Banner from "@/public/VNS_Banner.png";
 import { Operator } from "@/models/operatorModel";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import OperatorIcon from "@/app/tourney/components/operatorIcon";
+import ClassIcon from "@/app/tourney/components/classIcon";
 
 export default function TournamentBan() {
   const bannedList: Operator[] = [
@@ -27,7 +29,15 @@ export default function TournamentBan() {
     "Specialist",
   ];
   const [activeClass, setActiveClass] = useState<number>(0);
-  const [activeRarity, setActiveRarity] = useState<number>(5);
+  const [activeRarity, setActiveRarity] = useState<number>(-1);
+  const OperatorList: Operator[] = [
+    { id: "151_myrtle", name: "Vulpisfoglia", rarity: 6, class: 1 },
+    { id: "151_myrtle", name: "Texas", rarity: 5, class: 1 },
+    { id: "151_myrtle", name: "Courier", rarity: 4, class: 1 },
+    { id: "151_myrtle", name: "Fang", rarity: 3, class: 1 },
+    { id: "151_myrtle", name: "Yato", rarity: 2, class: 1 },
+    { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
+  ];
   return (
     <div className="block w-screen h-screen">
       <div className="flex flex-col w-full h-full items-start justify-start">
@@ -68,28 +78,14 @@ export default function TournamentBan() {
           </div>
         </div>
         <div className="grid grid-rows-2 w-full">
-          <div className="grid grid-cols-8 w-full h-9 my-1">
+          <div className="flex flex-row justify-between w-full h-9 my-1 px-2">
             {OperatorClasses.map((operatorClass, index) => {
               return (
-                <div className="flex flex-col items-center justify-center h-full w-full">
-                  <div
-                    className={`flex items-center justify-center w-9 h-9
-                      ${index === activeClass ? "bg-[#22BBFF] border-2" : "bg-black"}
-                    `}
-                    onClick={() => setActiveClass(index)}
-                    key={index}
-                  >
-                    <Image
-                      src={`/operator_classes/${operatorClass}.png`}
-                      alt={operatorClass}
-                      width={28}
-                      height={28}
-                      className={`object-contain
-                        ${index === activeClass ? "invert grayscale" : ""}
-                      `}
-                    />
-                  </div>
-                </div>
+                <ClassIcon
+                  operatorClass={operatorClass}
+                  active={index == activeClass}
+                  onClick={() => setActiveClass(index)}
+                />
               );
             })}
           </div>
@@ -112,6 +108,11 @@ export default function TournamentBan() {
               })}
             </div>
           </div>
+        </div>
+        <div className="grid grid-cols-5 w-full mt-2">
+          {OperatorList.map((operator, _) => {
+            return <OperatorIcon operator={operator} />;
+          })}
         </div>
       </div>
     </div>
