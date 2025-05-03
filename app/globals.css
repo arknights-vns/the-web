@@ -5,6 +5,9 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
+
+    /* Credit: Cerberose @ PR#5 */
+    min-height: calc(100vh - 65px);
 }
 
 @theme inline {
