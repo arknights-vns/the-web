@@ -9,17 +9,17 @@ import Link from "next/link";
 export default function Home() {
     return (
         <div
-            className={"hero layout-height layout-height-sm"}
+            className={
+                "hero layout-height layout-height-sm h-auto max-w-screen"
+            }
             style={{
                 backgroundImage: `url(${Quang.src})`,
-                width: "100%",
-                height: "auto",
             }}
         >
             <div className={"hero-overlay"}></div>
             <div
                 className={
-                    "hero-content flex flex-col place-content-center-safe gap-y-5"
+                    "hero-content flex flex-col place-content-center-safe"
                 }
             >
                 <Image
@@ -39,11 +39,6 @@ export default function Home() {
                     Every dream has its own chasers. <br />
                     And we, &quot;The Dreamchasers&quot;, <br />
                     will be the ones to carve it from hope.
-                </div>
-
-                <div className={"text-xl text-white"}>
-                    Sẽ ra mắt vào tháng 8{" "}
-                    <span className={"italic"}>(chắc thế)</span>
                 </div>
 
                 <div

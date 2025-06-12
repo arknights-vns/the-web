@@ -1,22 +1,23 @@
+import DRCH_Logo from "@/public/DRCH_Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Branding() {
     return (
         <>
-            <Link href={"/"}>
+            <Link className={"ml-6"} href={"/"}>
                 <Image
-                    src={"/VNS_Logo.png"}
-                    alt={"VNS-logo"}
-                    height={50}
-                    width={50}
+                    src={DRCH_Logo}
+                    alt={"DRCH_logo"}
+                    width={77}
+                    height={53}
                     loading={"eager"}
                     priority
                 />
             </Link>
             <div
                 className={
-                    "block place-content-center-safe p-1 text-sm font-bold lg:text-xl"
+                    "hidden place-content-center-safe p-1 font-bold lg:block lg:text-xl"
                 }
             >
                 <Link href={"/"}>Dreamchasers</Link>

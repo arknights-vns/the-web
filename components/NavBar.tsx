@@ -6,7 +6,7 @@ import BurgerMenu from "@/components/svg/BurgerMenu";
 export default function NavBar() {
     return (
         // https://github.com/saadeghi/daisyui/discussions/2277#discussioncomment-7400878
-        <div className={"navbar sticky top-0 z-1 bg-white shadow-md"}>
+        <div className={"navbar sticky z-1 h-18 bg-white shadow-md"}>
             <div className={"navbar-start space-x-2"}>
                 <div className={"dropdown"}>
                     <BurgerMenu />

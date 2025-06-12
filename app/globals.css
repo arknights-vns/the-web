@@ -4,7 +4,7 @@
 
 @utility layout-height {
     /* Credit: Cerberose @ PR#5 */
-    /* 65px is the height of NavBar */
+    /* 72px is the height of NavBar */
     @apply min-h-[calc(100svh_-_72px)];
 }
 
