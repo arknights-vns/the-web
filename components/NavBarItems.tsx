@@ -7,26 +7,46 @@ export default function NavbarItems() {
     return (
         <>
             <li>
-                <Link href={"/about/dreamchasers"}>Chúng tôi là ai?</Link>
+                <Link
+                    className={"font-bold lg:w-40 lg:justify-center"}
+                    href={"/about/dreamchasers"}
+                >
+                    Tụi mình là ai?
+                </Link>
             </li>
             <li>
-                <details open={false}>
-                    <summary>Nhân sự</summary>
-                    <ul>
-                        <li>
-                            <Link href={"/about/crew"}>&#34;Dreamchasers&#34;</Link>
-                        </li>
-                        <li>
-                            <Link href={"/about/partners"}>Đối tác</Link>
-                        </li>
-                    </ul>
-                </details>
+                <Link
+                    className={"font-bold lg:w-25 lg:justify-center"}
+                    href={"/about/crew"}
+                >
+                    Staff
+                </Link>
             </li>
             <li>
-                <Link href={"/tournament"}>???</Link>
+                <Link
+                    className={"font-bold lg:w-30 lg:justify-center"}
+                    href={"/timeline"}
+                >
+                    Timeline
+                </Link>
             </li>
             <li>
-                <Link href={"/timeline"}>Kế hoạch</Link>
+                <Link
+                    className={"font-bold lg:w-30 lg:justify-center"}
+                    href={"/retro"}
+                >
+                    Kỷ niệm
+                </Link>
+            </li>
+            <li>
+                <Link
+                    className={
+                        "block font-bold lg:hidden lg:w-30 lg:justify-center"
+                    }
+                    href={"/retro"}
+                >
+                    Tournament
+                </Link>
             </li>
         </>
     );

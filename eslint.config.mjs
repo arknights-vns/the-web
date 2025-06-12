@@ -29,8 +29,11 @@ const eslintConfig = [
             "prettier/prettier": [
                 "error",
                 {
-                    plugins: ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
-                    printWidth: 120,
+                    plugins: [
+                        "@trivago/prettier-plugin-sort-imports",
+                        "prettier-plugin-tailwindcss",
+                    ],
+                    printWidth: 80,
                     singleQuote: false,
                     trailingComma: "all",
                     endOfLine: "auto",

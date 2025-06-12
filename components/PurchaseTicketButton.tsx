@@ -6,15 +6,16 @@ import { useRouter } from "next/navigation";
 export default function PurchaseTicketButton() {
     const router = useRouter();
 
-    // TODO: Wait for ticket opening date.
     function TicketNavigation() {
         const currentDate = new Date(Date.now());
-        const ticketOpening = new Date("2025-07-27");
+        const ticketOpening = new Date("2025-12-31");
 
         if (currentDate < ticketOpening) {
-            (document.getElementById("ticket_modal")! as HTMLDialogElement).showModal();
+            (
+                document.getElementById("ticket_modal")! as HTMLDialogElement
+            ).showModal();
         } else {
-            router.push("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            router.push(process.env.NEXT_PUBLIC_FORM_LINK!);
         }
     }
 
@@ -31,16 +32,23 @@ export default function PurchaseTicketButton() {
 
             <dialog id={"ticket_modal"} className={"modal"}>
                 <div className={"modal-box bg-white"}>
-                    <h3 className={"text-lg font-bold"}>Hiện tại vé chưa mở bán.</h3>
+                    <h3 className={"text-lg font-bold"}>
+                        Hiện tại vé chưa mở bán.
+                    </h3>
                     <p className={"py-4"}>
                         Bạn hãy theo dõi fanpage{" "}
-                        <Link className={"font-bold underline"} href={"https://www.facebook.com/terrastationvn"}>
+                        <Link
+                            className={"font-bold underline"}
+                            href={"https://www.facebook.com/terrastationvn"}
+                        >
                             Trạm dừng chân chốn Terra
                         </Link>{" "}
                         để cập nhật thông tin sớm nhất nhé!
                         <br />
                         <br />
-                        <span className={"text-sm italic"}>(Bấm ra bên ngoài để đóng)</span>
+                        <span className={"text-sm italic"}>
+                            (Bấm ra bên ngoài để đóng)
+                        </span>
                     </p>
                 </div>
                 <form method={"dialog"} className={"modal-backdrop"}>

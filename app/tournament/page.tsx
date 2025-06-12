@@ -3,7 +3,7 @@
 import { Operator } from "@/app/tournament/models/Operator";
 import ClassIcon from "@/components/tournament/ClassIcon";
 import OperatorIcon from "@/components/tournament/OperatorIcon";
-import VNS_Banner from "@/public/VNS_Banner.png";
+import VNS_Banner from "@/public/DRCH_Banner.png";
 import Image from "next/image";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
@@ -14,8 +14,18 @@ export default function TournamentBan() {
         { id: "151_myrtle", name: "Texas the Omertosa", rarity: 4, class: 1 },
         { id: "151_myrtle", name: "Vulpisfoglia", rarity: 4, class: 1 },
         { id: "151_myrtle", name: "Entelechia", rarity: 4, class: 1 },
-        { id: "151_myrtle", name: "Executor the Ex Foedere", rarity: 4, class: 1 },
-        { id: "151_myrtle", name: "Silence the Paradigmatic", rarity: 4, class: 1 },
+        {
+            id: "151_myrtle",
+            name: "Executor the Ex Foedere",
+            rarity: 4,
+            class: 1,
+        },
+        {
+            id: "151_myrtle",
+            name: "Silence the Paradigmatic",
+            rarity: 4,
+            class: 1,
+        },
         { id: "151_myrtle", name: "Myrtle", rarity: 4, class: 1 },
     ];
     const OperatorClasses: string[] = [
@@ -57,17 +67,32 @@ export default function TournamentBan() {
         { id: "151_myrtle", name: "Confess-47", rarity: 1, class: 1 },
     ];
     return (
-        <div className={"block w-screen overflow-hidden"}>
-            <div className={"flex h-full w-full flex-col items-start justify-start"}>
-                <div className={"flex my-3 w-full items-center justify-center"}>
-                    <Image src={VNS_Banner} alt={"VNS_Banner"} width={150} className={"object-contain"} />
+        <div className={"block h-screen w-screen"}>
+            <div
+                className={
+                    "flex h-full w-full flex-col items-start justify-start"
+                }
+            >
+                <div
+                    className={
+                        "sticky top-16 my-3 flex h-10 w-full items-center justify-center"
+                    }
+                >
+                    <Image
+                        src={VNS_Banner}
+                        alt={"VNS_Banner"}
+                        height={40}
+                        className={"object-contain"}
+                    />
                 </div>
                 <div className={"grid min-h-25 w-full grid-cols-6"}>
                     {bannedList.map((operator) => {
                         return (
                             <div
                                 key={operator.name}
-                                className={"flex h-full w-full flex-col items-center justify-start"}
+                                className={
+                                    "flex h-full w-full flex-col items-center justify-start"
+                                }
                             >
                                 <div className={"h-12 w-12 bg-gray-400"}>
                                     <Image
@@ -78,21 +103,36 @@ export default function TournamentBan() {
                                         className={"object-contain grayscale"}
                                     />
                                 </div>
-                                <div className={"w-full px-1 text-center text-[10px] break-words"}>{operator.name}</div>
+                                <div
+                                    className={
+                                        "w-full px-1 text-center text-[10px] break-words"
+                                    }
+                                >
+                                    {operator.name}
+                                </div>
                             </div>
                         );
                     })}
                 </div>
-                <div className={"flex h-8 w-full flex-row justify-between bg-gray-300 px-2"}>
+                <div
+                    className={
+                        "flex h-8 w-full flex-row justify-between bg-gray-300 px-2"
+                    }
+                >
                     <div className={"text-xs leading-8"}>
-                        Thời gian còn lại: <span className={"text-red-500"}>30</span> giây
+                        Thời gian còn lại:{" "}
+                        <span className={"text-red-500"}>30</span> giây
                     </div>
                     <div className={"text-xs leading-8"}>
                         Đã cấm: <span className={"text-red-500"}>0</span>/6 Op
                     </div>
                 </div>
                 <div className={"grid w-full grid-rows-2"}>
-                    <div className={"my-1 flex h-9 w-full flex-row justify-between px-2"}>
+                    <div
+                        className={
+                            "my-1 flex h-9 w-full flex-row justify-between px-2"
+                        }
+                    >
                         {OperatorClasses.map((operatorClass, index) => {
                             return (
                                 <ClassIcon
@@ -109,7 +149,9 @@ export default function TournamentBan() {
                             {Array.from({ length: 6 }).map((_, index) => {
                                 return (
                                     <div
-                                        className={"flex flex-col items-center justify-center"}
+                                        className={
+                                            "flex flex-col items-center justify-center"
+                                        }
                                         onClick={() => setActiveRarity(index)}
                                         key={index}
                                     >

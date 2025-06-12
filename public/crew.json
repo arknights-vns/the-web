@@ -6,11 +6,6 @@
       "quote": "tao đa thê kệ tao"
     },
     {
-      "name": "greenyoshiyt",
-      "role": "Co-Director",
-      "quote": "How can I help ya?"
-    },
-    {
       "name": "Shihotori",
       "role": "Co-Director",
       "quote": "Been composing music since 2018"
@@ -18,7 +13,7 @@
     {
       "name": "Kamaeri",
       "role": "Consultant_&_MC",
-      "quote": "I’m not a robot, I’m just… dumb"
+      "quote": "I'm not a robot, I'm just… dumb"
     },
     {
       "name": "Sukiri",
@@ -28,7 +23,7 @@
     {
       "name": "AkaneOSK",
       "role": "Secretary",
-      "quote": "Akane Ousaka is my love omg she’s so cute!!"
+      "quote": "Akane Ousaka is my love omg she's so cute!!"
     },
     {
       "name": "Meruko",
@@ -83,8 +78,18 @@
       "quote": "Cợt nhả có lông"
     },
     {
+      "name": "DuyBong",
+      "role": "Graphic_Designer",
+      "quote": ""
+    },
+    {
+      "name": "Zopu",
+      "role": "Graphic_Designer",
+      "quote": ""
+    },
+    {
       "name": "Monoka",
-      "role": "Illusion_Artist",
+      "role": "Illustration_Artist",
       "quote": ""
     },
     {
@@ -108,8 +113,18 @@
       "quote": "NOT EXIST"
     },
     {
-      "name": "Zopu",
-      "role": "Graphic_Designer",
+      "name": "Cerberose",
+      "role": "IT",
+      "quote": "I don't even play Arknights"
+    },
+    {
+      "name": "Ｈｙｐｅｒ－Ｖ△",
+      "role": "Photographer",
+      "quote": "Làm tí 1 shoot nhom nhom bạn eyyyy"
+    },
+    {
+      "name": "Moorce",
+      "role": "Videographer",
       "quote": ""
     },
     {
@@ -130,21 +145,6 @@
     {
       "name": "Phoeni",
       "role": "[VCL]",
-      "quote": ""
-    },
-    {
-      "name": "Cerberose",
-      "role": "IT",
-      "quote": "I don't even play Arknights"
-    },
-    {
-      "name": "Ｈｙｐｅｒ－Ｖ△",
-      "role": "Photographer",
-      "quote": "Làm tí 1 shoot nhom nhom bạn eyyyy"
-    },
-    {
-      "name": "Moorce",
-      "role": "Videographer",
       "quote": ""
     }
   ]

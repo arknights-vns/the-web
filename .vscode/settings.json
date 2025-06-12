@@ -1,15 +1,12 @@
 {
-    "[javascript]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-    },
     "[typescript]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "files.associations": {
+        "globals.css": "tailwindcss"
     },
     "files.exclude": {
         ".idea": true,
@@ -19,5 +16,25 @@
         "node_modules": true,
         "**/shikanoko.txt": true // shhhh
     },
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "cssvar.postcssPlugins": [
+        ["postcss-import"],
+        ["postcss-nested", {
+            "unwrap": ["phone"]
+        }],
+
+        // Use tailwindcss plugin with precaution, as it
+        // processes every css passed to this extension.
+        // Always use `cssvar.files` to properly define your source files
+        // when using tailwindcss, to keep this extension parsing fast enough.
+        "tailwindcss",
+
+        "@tokencss/postcss"
+        // Do not use `postcss-preset-env` plugin, as it makes the extension
+        // parsing pretty slow, which happens on each source file change.
+        // "postcss-preset-env"
+    ],
 }

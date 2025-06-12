@@ -2,32 +2,13 @@
 
 @plugin "daisyui";
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
-}
-
-@theme inline {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-}
-
-body {
-    background: var(--background);
-    color: var(--foreground);
-}
-
 @utility layout-height {
     /* Credit: Cerberose @ PR#5 */
     /* 65px is the height of NavBar */
-    @apply min-h-[calc(100svh_-_65px)];
+    @apply min-h-[calc(100svh_-_72px)];
 }
 
-@utility bg-vns-noise {
-    background-color: white;
-}
-
-.Crew_Role {
+@utility crew-role-generic {
     border-radius: 1rem;
 }
 
@@ -36,7 +17,7 @@ body {
 .Co-Director,
 .Consultant\_\&\_MC {
     background-color: var(--color-red-500);
-    color: white;
+    color: var(--color-white);
 }
 
 .Secretary {
@@ -66,16 +47,18 @@ body {
     color: var(--color-white);
 }
 
-.Illusion_Artist {
-    background-color: var(--color-purple-400);
+.Illustration_Artist {
+    background-color: var(--color-purple-700);
+    color: var(--color-white);
 }
 
 .Sponsor {
-    background-color: var(--color-blue-200);
+    background-color: var(--color-emerald-800);
+    color: var(--color-white);
 }
 
 .Donator {
-    background-color: var(--color-emerald-400);
+    background-color: var(--color-emerald-200);
 }
 
 .Concept_Artist {
@@ -84,8 +67,7 @@ body {
 }
 
 .Graphic_Designer {
-    background-color: var(--color-emerald-800);
-    color: var(--color-white);
+    background-color: var(--color-blue-200);
 }
 
 .Photographer {
@@ -93,6 +75,5 @@ body {
 }
 
 .Videographer {
-    background-color: var(--color-red-400);
-    color: var(--color-white);
+    background-color: var(--color-red-300);
 }

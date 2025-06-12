@@ -11,7 +11,7 @@ const jbMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://arknights-vietnam-station.github.io/"),
+    metadataBase: new URL("https://a9vns.giabao06.xyz"),
     title: "Dreamchasers @ 2025 🔥",
     description: "From VNS Dev Squad with love ❤️️",
     authors: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: [
             {
-                url: "https://arknights-vietnam-station.github.io/VNS_Banner.png",
+                url: "https://a9vns.giabao06.xyz/VNS_Banner.png",
                 alt: "VNS banner",
             },
         ],
