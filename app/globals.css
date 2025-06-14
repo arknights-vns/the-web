@@ -12,78 +12,78 @@
     border-radius: 1rem;
 }
 
-/* Crew roles */
-.Event_Director,
-.Co-Director,
-.Consultant\_\&\_MC {
-    background-color: var(--color-red-500);
-    color: var(--color-white);
-}
-.Consultant {
-    background-color: var(--color-red-500);
-    color: var(--color-white);
-}
-.Secretary {
-    background-color: var(--color-red-300);
-    color: var(--color-amber-900)
-}
-.Minigame{
-    background-color: #ffe5a0;
-    color: #000000;
-}
-.ALL {
-    background-color: #000000;;
-    color: var(--color-white)
-}
-.IT {
-    background-color: var(--color-orange-400);
+@utility event-director {
+    @apply bg-red-500 text-white;
 }
 
-.Logistics {
-    background-color: var(--color-sky-300);
+@utility co-director {
+    @apply bg-red-500 text-white;
 }
 
-.Kahoot {
-    background-color: var(--color-purple-300);
+@utility consultant-and-mc {
+    @apply bg-red-500 text-white;
 }
 
-.Multimedia {
-    background-color: var(--color-cyan-400);
+@utility consultant {
+    @apply bg-red-500 text-white;
 }
 
-/* Partner roles */
-.\[VCL\] {
-    background-color: var(--color-rose-500);
-    color: var(--color-white);
+@utility secretary {
+    @apply bg-red-300 text-amber-900;
 }
 
-.Illustration_Artist {
-    background-color: var(--color-purple-700);
-    color: var(--color-white);
+@utility minigame {
+    @apply bg-yellow-300 text-black;
 }
 
-.Sponsor {
-    background-color: var(--color-emerald-800);
-    color: var(--color-white);
+@utility all {
+    @apply bg-black text-white;
 }
 
-.Donator {
-    background-color: var(--color-emerald-200);
+@utility it {
+    @apply bg-orange-400;
 }
 
-.Concept_Artist {
-    background-color: var(--color-blue-200);
-    color: var(--color-blue-600);
+@utility logistics {
+    @apply bg-sky-300;
 }
 
-.Graphic_Designer {
-    background-color: var(--color-blue-200);
+@utility kahoot {
+    @apply bg-purple-300;
 }
 
-.Photographer {
-    background-color: var(--color-yellow-200);
+@utility multimedia {
+    @apply bg-cyan-400;
 }
 
-.Videographer {
-    background-color: var(--color-red-300);
+@utility vcl {
+    @apply bg-rose-500 text-white;
+}
+
+@utility illustration-artist {
+    @apply bg-purple-700 text-white;
+}
+
+@utility sponsor {
+    @apply bg-emerald-800 text-white;
+}
+
+@utility donator {
+    @apply bg-emerald-200;
+}
+
+@utility concept-artist {
+    @apply bg-blue-200 text-blue-600;
+}
+
+@utility graphic-designer {
+    @apply bg-blue-200;
+}
+
+@utility photographer {
+    @apply bg-yellow-200;
+}
+
+@utility videographer {
+    @apply bg-red-300;
 }
