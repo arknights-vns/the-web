@@ -6,12 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "npx prisma generate"
+    "lint": "next lint"
   },
   "dependencies": {
     "@dev0ph3r/netlify-plugin-discord": "^1.0.2",
-    "@prisma/client": "^6.6.0",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -30,7 +28,6 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.6",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "prisma": "^6.6.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
