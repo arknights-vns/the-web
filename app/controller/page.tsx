@@ -1,3 +1,7 @@
 export default function Page() {
-    return <h1>Hello World</h1>;
+    return (
+        <div className={"hero-center text-center"}>
+            <h1>Mini-tournament Controller</h1>;
+        </div>
+    );
 }
