@@ -8,10 +8,10 @@ export default function Settings() {
 
     return (
         <>
-            <div className={"font-[family-name:var(--font-jb-mono)]"}>
+            <div className={"mt-5 text-center text-3xl font-bold"}>
                 <h1>Settings and Configuration</h1>
             </div>
-            <div id={"config"}>
+            <div id={"config"} className={"mt-10 text-center"}>
                 <label>
                     Server URL:
                     <input
