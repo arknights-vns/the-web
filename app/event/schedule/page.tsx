@@ -1,5 +1,7 @@
 // import InProgress from "@/components/InProgress";
 import PageTitle from "@/components/PageTitle";
+import Hourglass from "@/public/Hourglass.png";
+import Image from "next/image";
 import React from "react";
 
 const scheduleItems = [
@@ -41,7 +43,7 @@ export default function SchedulePage() {
                         </div>
                     </div>
                 </div>
-                <div className={"h-full flex-1 px-40 py-10"}>
+                <div className={"h-full flex-1 px-40 pt-30"}>
                     <div className={"grid grid-cols-5"}>
                         {scheduleItems.map((item) => {
                             return (
@@ -86,6 +88,9 @@ export default function SchedulePage() {
                                 )}
                             </React.Fragment>
                         ))}
+                    </div>
+                    <div className={"mt-20 flex w-full justify-center"}>
+                        <Image src={Hourglass} width={32} height={32} alt={"time"} />
                     </div>
                 </div>
             </div>
