@@ -8,6 +8,8 @@
 
 // on vote unlock, show QR Code using google graph
 
+import { NextRequest } from "next/server";
+
 export async function GET() {
     //todo: actually check vote status
     return Response.json(
@@ -16,7 +18,14 @@ export async function GET() {
     );
 }
 
-export async function POST() {
-    //todo: actually set vote status
-    return Response.json({ status: "unlocked" }, { status: 200});
+export async function POST(res: NextRequest) {
+    const actions = ["lock", "timer", "timerReset", "nextOp", "prevOp", "showRes"];
+    const r = await res.text();
+    const data = JSON.parse(r);
+    if (!actions.includes(data.action)) {
+        return Response.json({ msg: "invalid action" }, { status: 400 });
+    } else {
+        //todo: actually set vote status
+        return Response.json({ status: "unlocked" }, { status: 200 });
+    }
 }
