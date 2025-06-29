@@ -1,19 +1,19 @@
 "use client";
 
+import { isWithinTicketAllowedTime } from "@/lib/ticket_time";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function PurchaseTicketButton() {
     const router = useRouter();
 
-    function TicketNavigation() {
-        const currentDate = new Date(Date.now());
-        const ticketOpening = new Date("2025-12-31");
+    async function TicketNavigation() {
+        const isTicketAllowed = await isWithinTicketAllowedTime();
 
-        if (currentDate < ticketOpening) {
+        if (!isTicketAllowed) {
             (document.getElementById("ticket_modal")! as HTMLDialogElement).showModal();
         } else {
-            router.push(process.env.NEXT_PUBLIC_FORM_LINK!);
+            router.push(process.env.VNS_TICKET_FORM_LINK!);
         }
     }
 

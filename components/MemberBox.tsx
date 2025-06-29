@@ -1,4 +1,4 @@
-import { VNS_Member } from "@/lib/types/vns_types";
+import { VNS_Member } from "@/lib/vns_types";
 import Image from "next/image";
 
 export default function MemberBox(props: VNS_Member) {

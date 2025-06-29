@@ -5,6 +5,9 @@ import DRCH_Banner from "@/public/DRCH_Banner_Group.png";
 import BG_1 from "@/public/landing-bg/BG_1.png";
 import BG_2 from "@/public/landing-bg/BG_2.jpg";
 import BG_3 from "@/public/landing-bg/BG_3.jpg";
+import BG_4 from "@/public/landing-bg/BG_4.jpg";
+import BG_5 from "@/public/landing-bg/BG_5.jpg";
+import BG_6 from "@/public/landing-bg/BG_6.jpg";
 import Jiangles_Banner from "@/public/organizers/jiangles_banner.png";
 import ModSquad_Banner from "@/public/organizers/mod_squad_banner.png";
 import VNS_Banner from "@/public/organizers/vns_banner.png";
@@ -13,7 +16,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 
 export default function Home() {
-    const images = [BG_1, BG_2, BG_3];
+    const images = [BG_1, BG_2, BG_3, BG_4, BG_5, BG_6];
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 })]);
 
     return (

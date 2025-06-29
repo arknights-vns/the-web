@@ -1,6 +1,11 @@
 {
     "recommendations": [
         "dbaeumer.vscode-eslint",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "mikestead.dotenv",
+        "YoavBls.pretty-ts-errors",
+        "meganrogge.template-string-converter",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag"
     ]
 }
