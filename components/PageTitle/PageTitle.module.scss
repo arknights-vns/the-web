@@ -1,0 +1,14 @@
+.title_decor {
+    position: absolute;
+    width: 120px;
+
+    &_left {
+        right: calc(100% + 1rem);
+    }
+
+    &_right {
+        left: calc(100% + 1rem);
+    }
+}
+
+

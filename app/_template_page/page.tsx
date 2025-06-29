@@ -1,5 +1,5 @@
 import InProgress from "@/components/InProgress";
-import PageTitle from "@/components/PageTitle";
+import PageTitle from "@/components/PageTitle/PageTitle";
 
 export default function ExamplePage() {
     return (

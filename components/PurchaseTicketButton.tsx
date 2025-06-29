@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Text from "./Text/Text";
 
 export default function PurchaseTicketButton() {
     const router = useRouter();
@@ -25,7 +26,7 @@ export default function PurchaseTicketButton() {
                 }
                 onClick={TicketNavigation}
             >
-                <span>Mua vé</span>
+                <Text type="title-4" weight={600}>Mua vé</Text>
             </button>
 
             <dialog id={"ticket_modal"} className={"modal"}>

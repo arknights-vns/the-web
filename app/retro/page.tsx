@@ -1,4 +1,4 @@
-import PageTitle from "@/components/PageTitle";
+import PageTitle from "@/components/PageTitle/PageTitle";
 import RetroItem from "@/components/RetroItem";
 import Dreamchasers from "@/public/retro/dreamchasers/dreamchaser.png";
 import TheShowMustGoOn from "@/public/retro/the-show-must-go-on/the-show-must-go-on.jpg";

@@ -1,12 +1,15 @@
 import Branding from "@/components/Branding";
-import NavBarItems from "@/components/NavBarItems";
+import NavBarItems from "@/components/NavBar/NavBarItems";
 import PurchaseTicketButton from "@/components/PurchaseTicketButton";
 import BurgerMenu from "@/components/svg/BurgerMenu";
 import Sparkle from "@/components/svg/Sparkle";
+import styles from "./NavBar.module.scss";
+import Container from "../Container/Container";
 
 export default function NavBar() {
-    return (
-        <header className={"sticky top-0 z-1 flex h-[70px] items-center bg-white"}>
+  return (
+    <header className={"sticky top-0 z-999 h-[70px] bg-white"}>
+        <Container className={"flex items-center"}>
             <div className={"ml-4 flex items-center justify-center"}>
                 <div className={"dropdown"}>
                     <BurgerMenu />
@@ -21,11 +24,12 @@ export default function NavBar() {
                 </div>
                 <Branding />
             </div>
-            <div className={"mr-4 ml-auto flex items-center gap-x-5 lg:flex"}>
+            <div className={styles.menu_wrapper}>
                 <NavBarItems />
                 <PurchaseTicketButton />
                 <Sparkle />
             </div>
-        </header>
-    );
+        </Container>
+    </header>
+  );
 }

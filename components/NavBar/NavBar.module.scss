@@ -1,0 +1,55 @@
+@use "../../styles/responsive.scss";
+
+.menu_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+  margin-left: auto;
+  
+  .nav_item_wrapper {
+    display: none;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    gap: 1rem;
+    cursor: pointer;
+    position: relative;
+    
+    @include responsive.screen(lg) {
+      display: flex;
+    }
+  }
+  
+  .link_item {
+    position: relative;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 1.5px;
+      transform: scaleX(0);
+      transition: 0.2s ease-in-out;
+    }
+    
+    &:hover:after {
+      transition: 0.2s ease-in-out;
+      transform: scaleX(1);
+    }
+
+    &.active:after {
+      transform: scaleX(1);
+    }
+  }
+  
+  .divider {
+    width: 2rem;
+    height: 1.5px;
+    background-color: black;
+  }
+}
