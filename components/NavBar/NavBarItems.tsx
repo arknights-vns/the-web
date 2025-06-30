@@ -1,10 +1,12 @@
 "use client";
-import Link from "next/link";
-import styles from "./NavBar.module.scss";
-import Text from "../Text/Text";
+
 import classNames from "classnames";
-import { Fragment } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Fragment } from "react";
+
+import Text from "../Text/Text";
+import styles from "./NavBar.module.scss";
 
 export default function NavBarItems({ isMobile = false }: { isMobile?: boolean }) {
     const links = [
@@ -45,21 +47,19 @@ export default function NavBarItems({ isMobile = false }: { isMobile?: boolean }
     return (
         <div className={styles.nav_item_wrapper}>
             <div className={"dropdown dropdown-hover"}>
-                <Text 
-                    type="title-4" 
-                    className={
-                        classNames(
-                            styles.link_item,
-                            {
-                                [styles.active]: pathname.includes("/event"),
-                            }
-                        )}
-                    >
-                        Sự kiện
+                <Text
+                    type={"title-4"}
+                    className={classNames(styles.link_item, {
+                        [styles.active]: pathname.includes("/event"),
+                    })}
+                >
+                    Sự kiện
                 </Text>
                 <ul
                     tabIndex={0}
-                    className={"dropdown-content menu rounded-box z-1000 w-52 bg-white p-2 shadow-sm"}
+                    className={
+                        "dropdown-content menu rounded-box z-1000 w-52 bg-white p-2 shadow-sm"
+                    }
                 >
                     <li>
                         <Link href={"/event/timeline"}>Timeline</Link>
@@ -72,40 +72,41 @@ export default function NavBarItems({ isMobile = false }: { isMobile?: boolean }
                     </li>
                 </ul>
             </div>
-            <div className={styles.divider}/>
+            <div className={styles.divider} />
             {links.map((link, index) => (
                 <Fragment key={link.name}>
-                    {index !== 0 && <div className={styles.divider}/>}
-                    <Link href={link.href} className={classNames(styles.link_item, {
-                        [styles.active]: pathname === link.href,
-                    })}>
-                        <Text type="title-4">{link.name}</Text>
+                    {index !== 0 && <div className={styles.divider} />}
+                    <Link
+                        href={link.href}
+                        className={classNames(styles.link_item, {
+                            [styles.active]: pathname === link.href,
+                        })}
+                    >
+                        <Text type={"title-4"}>{link.name}</Text>
                     </Link>
                 </Fragment>
             ))}
-            <div className={styles.divider}/>
+            <div className={styles.divider} />
             <div className={"dropdown dropdown-hover"}>
-                <Text 
-                    type="title-4" 
-                    className={
-                        classNames(
-                            styles.link_item,
-                            {
-                                [styles.active]: pathname.includes("/tournament"),
-                            }
-                        )}
-                    >
-                        Tournament
+                <Text
+                    type={"title-4"}
+                    className={classNames(styles.link_item, {
+                        [styles.active]: pathname.includes("/tournament"),
+                    })}
+                >
+                    Tournament
                 </Text>
                 <ul
                     tabIndex={0}
-                    className={"dropdown-content menu rounded-box z-1000 w-52 bg-white p-2 shadow-sm"}
+                    className={
+                        "dropdown-content menu rounded-box z-1000 w-52 bg-white p-2 shadow-sm"
+                    }
                 >
                     <li>
                         <Link href={"/tournament/overview"}>Giới thiệu</Link>
                     </li>
                     <li>
-                        <Link href={"/tournament/rules"}>Luật chơi  </Link>
+                        <Link href={"/tournament/rules"}>Luật chơi </Link>
                     </li>
                     <li>
                         <Link href={"/tournament/prize"}>Giải thưởng</Link>
