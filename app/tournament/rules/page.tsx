@@ -15,10 +15,10 @@ export default function RulePage() {
     const [carouseRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 })]);
 
     return (
-        <div className={classNames("vns-background", styles.tournament_page)}>
-            <div className={"hero max-w-screen"}>
-                <div className={"hero-content max-w-screen text-center"}>
-                    <Container>
+        <div className={classNames("h-visible vns-background", styles.tournament_page)}>
+            <div className={"hero"}>
+                <div className={"hero-content text-center"}>
+                    <Container className={"p-0!"}>
                         <PageTitle title={"Tournament"} favorText={"Luật chơi"} dark />
                         <div className={styles.tournament_info}>
                             <div
@@ -442,7 +442,7 @@ export default function RulePage() {
                         </div>
                     </Container>
                 </div>
-            </div>{" "}
+            </div>
         </div>
     );
 }

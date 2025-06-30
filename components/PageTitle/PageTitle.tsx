@@ -16,7 +16,7 @@ export default function PageTitle(props: PageTitleProps) {
     const favorTextStyle = isDarkBg ? "text-white" : "text-black";
 
     return (
-        <div className={"w-full overflow-hidden"}>
+        <div className={"w-full"}>
             <div
                 className={`mt-4 flex items-center justify-center text-center ${invertStyle} relative mx-auto w-fit`}
             >
@@ -30,7 +30,7 @@ export default function PageTitle(props: PageTitleProps) {
                     <TitleDecorRight width={115} height={24} />
                 </div>
             </div>
-            {props.favorText && <p className={`my-4 ${favorTextStyle}`}>{props.favorText}</p>}
+            {props.favorText && <p className={`mt-4 ${favorTextStyle}`}>{props.favorText}</p>}
         </div>
     );
 }

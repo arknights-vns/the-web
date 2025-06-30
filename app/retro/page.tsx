@@ -5,14 +5,10 @@ import TheShowMustGoOn from "@/public/retro/the-show-must-go-on/the-show-must-go
 
 export default function RetroPage() {
     return (
-        <div
-            className={
-                "vns-background flex min-h-screen flex-col items-center justify-start overflow-x-hidden"
-            }
-        >
-            <div className={"hero mb-0 w-full"}>
-                <div className={"hero-content mb-0 text-center"}>
-                    <div className={"mb-0"}>
+        <div className={"h-visible vns-background"}>
+            <div className={"hero"}>
+                <div className={"hero-content text-center"}>
+                    <div>
                         <PageTitle
                             title={"Kỷ niệm"}
                             favorText={"Nơi lưu giữ album của những buổi Offline."}
@@ -22,7 +18,7 @@ export default function RetroPage() {
                 </div>
             </div>
             <div
-                className={"flex w-[82%] flex-col items-center gap-y-4 self-center px-2"}
+                className={"flex flex-col items-center justify-center gap-y-4 self-center md:mx-32"}
                 data-theme={"dark"}
             >
                 <RetroItem

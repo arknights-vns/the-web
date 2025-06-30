@@ -10,7 +10,7 @@ import styles from "./NavBar.module.scss";
 export default function NavBar() {
     return (
         <header className={"sticky top-0 z-999 h-[70px] bg-white"}>
-            <Container className={"flex items-center"}>
+            <Container className={"flex min-w-full items-center"}>
                 <div className={"ml-4 flex items-center justify-center"}>
                     <div className={"dropdown"}>
                         <BurgerMenu />

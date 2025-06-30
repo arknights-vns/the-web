@@ -1,15 +1,15 @@
 import classNames from "classnames";
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface ContainerProps {
     className?: string;
     children?: ReactNode;
 }
 
-const Container: FC<ContainerProps> = ({ className, children }) => {
+export default function Container(props: ContainerProps) {
     return (
-        <div className={classNames(className, "m-auto w-full max-w-[1200px] p-3")}>{children}</div>
+        <div className={classNames("m-auto w-full max-w-[1200px] p-3", props.className)}>
+            {props.children}
+        </div>
     );
-};
-
-export default Container;
+}
