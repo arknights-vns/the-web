@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBar/NavBar";
 import type { Metadata, Viewport } from "next";
 import { Montserrat as VNS_Font } from "next/font/google";
 import { ReactNode } from "react";

@@ -1,4 +1,4 @@
-import PageTitle from "@/components/PageTitle";
+import PageTitle from "@/components/PageTitle/PageTitle";
 import Mcafe from "@/public/MCafe_Entry.jpg";
 import Image from "next/image";
 
