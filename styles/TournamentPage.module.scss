@@ -1,16 +1,22 @@
+@use "@/styles/responsive.scss";
+
 .tournament_page {
-  height: calc(100vh - 70px);
-  min-height: 650px;
   width: 100%;
+
+  @include responsive.screen(sm) {
+    height: calc(100vh - 70px);
+    min-height: 650px;
+  }
   
   .tournament_info {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 5rem;
     align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 720px;
+    position: relative;
 
     .tournament_info_content {
       text-align: center;
@@ -35,7 +41,7 @@
 
     .slide_image {
       width: 100%;
-      max-width: 600px;
+      max-width: 480px;
       object-fit: cover;
     }
   }
@@ -44,7 +50,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 520px;
+    max-width: 420px;
 
     .image_2 {
       width: calc(100% / 6);
@@ -58,5 +64,63 @@
       align-items: center;
       justify-content: center;
     }
+  }
+
+  .button_container {
+    position: absolute;
+    top: 50%;
+    display: none;
+
+    @include responsive.screen(md) {
+      display: block;
+    }
+  }
+
+  .arrow_icon {
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+    cursor: pointer;
+
+    @include responsive.screen(lg) {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .arrow_icon_right {
+    rotate: 180deg;
+    right: -2.5%;
+    @include responsive.screen(lg) {
+      right: -6rem;
+    }
+  }
+
+  .arrow_icon_left {
+    left: -2.5%;
+    @include responsive.screen(lg) {
+      left: -6rem;
+    }
+  }
+
+  .bullet_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .bullet_item_dot {
+    width: calc(100% / 8);
+    background-color: white;
+    height: 4px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .bullet_item_dot_active {
+    opacity: 1;
+    transition: all 0.3s ease;
   }
 }
