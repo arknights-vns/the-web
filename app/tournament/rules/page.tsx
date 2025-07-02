@@ -35,7 +35,7 @@ export default function RulePage() {
     }, [emblaApi, onSelect]);
 
     return (
-        <div className={classNames("vns-background", styles.tournament_page)}>
+        <div className={classNames("vns-background overflow-y-hidden", styles.tournament_page)}>
             <div className={"hero max-w-screen"}>
                 <div className={"hero-content max-w-screen text-center"}>
                     <Container>

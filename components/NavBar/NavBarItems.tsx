@@ -40,6 +40,22 @@ export default function NavBarItems({ isMobile = false }: { isMobile?: boolean }
                         <Link href={link.href}>{link.name}</Link>
                     </li>
                 ))}
+                <li>
+                    <details>
+                        <summary>Tournament</summary>
+                        <ul>
+                            <li>
+                                <Link href={"/tournament/overview"}>Giới thiệu</Link>
+                            </li>
+                            <li>
+                                <Link href={"/tournament/rules"}>Luật chơi</Link>
+                            </li>
+                            <li>
+                                <Link href={"/tournament/prizes"}>Giải thưởng</Link>
+                            </li>
+                        </ul>
+                    </details>
+                </li>
             </>
         );
     }
