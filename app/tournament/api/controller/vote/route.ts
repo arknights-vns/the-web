@@ -19,7 +19,7 @@ export async function GET() {
 }
 
 export async function POST(res: NextRequest) {
-    const actions = ["lock", "timer", "timerReset", "nextOp", "prevOp", "showRes"];
+    const actions = ["lock", "timer", "timerReset", "showRes"];
     const r = await res.text();
     const data = JSON.parse(r);
     if (!actions.includes(data.action)) {
